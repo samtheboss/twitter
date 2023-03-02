@@ -16,7 +16,7 @@ import { TfiMoreAlt } from "react-icons/tfi";
 
 export default function Sidebar() {
   return (
-    <div className="sm:flex flex-col p-2  fixed h-full">
+    <div className="hidden sm:flex flex-col p-2  fixed h-full">
       {/*logo div*/}
       <div className="HoverEffect p-1 hover:bg-blue-100">
         <Image src={logo} height="50" width="50"></Image>

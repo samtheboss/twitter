@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import { Inter } from 'next/font/google'
 import Sidebar from '@/Components/Sidebar'
+import Feed from '@/Components/Feed'
 
 
 const inter = Inter({ subsets: ['latin'] })
@@ -16,6 +17,7 @@ export default function Home() {
       </Head>
       <main className='flex min-h-screen max-w-7xl mx-auto'>
        <Sidebar/>
+       <Feed/>
       </main>
       
     </div>
