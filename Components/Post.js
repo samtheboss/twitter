@@ -36,11 +36,12 @@ export default function Post({ post }) {
         {/*post icons*/}
         <div className="flex items-center justify-between  text-gray-500 m-2">
           <BsChatDotsFill className="h-9  text-sky-500   hover:text-sky-200 cursor-pointer" />
+          <FaRetweet className="h-9  text-sky-500   hover:text-sky-200 cursor-pointer " />
           <BsTrash className="h-9  text-red-700   hover:text-red-200 cursor-pointer" />
           <BsHeart className="h-9 text-red-600   hover:text-red-200 cursor-pointer" />
           <BsShare className="h-9  text-sky-500   hover:text-sky-200 cursor-pointer" />
           <FaRegChartBar className=" text-sky-500   hover:text-sky-200 cursor-pointer" />
-          <FaRetweet className="h-9  text-sky-500   hover:text-sky-200 cursor-pointer " />
+        
         </div>
       </div>
     </div>
