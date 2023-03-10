@@ -1,0 +1,141 @@
+[debug] [2023-03-08T08:25:27.072Z] ----------------------------------------------------------------------
+[debug] [2023-03-08T08:25:27.074Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\samue\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2023-03-08T08:25:27.075Z] CLI Version:   11.24.1
+[debug] [2023-03-08T08:25:27.075Z] Platform:      win32
+[debug] [2023-03-08T08:25:27.075Z] Node Version:  v18.7.0
+[debug] [2023-03-08T08:25:27.077Z] Time:          Wed Mar 08 2023 11:25:27 GMT+0300 (East Africa Time)
+[debug] [2023-03-08T08:25:27.077Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-03-08T08:25:27.089Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-03-08T08:25:27.090Z] > authorizing via signed-in user (smarta99sdevelopers@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  D:\react\twitter
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2023-03-08T08:25:47.695Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2023-03-08T08:25:50.549Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2023-03-08T08:25:50.550Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] i  Using project smartappstwitter (twitter) 
+[info] 
+=== Database Setup
+[info] i  database: ensuring required API firebasedatabase.googleapis.com is enabled... 
+[debug] [2023-03-08T08:25:57.686Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/smartappstwitter/services/firebasedatabase.googleapis.com [none]
+[debug] [2023-03-08T08:25:57.686Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/smartappstwitter/services/firebasedatabase.googleapis.com x-goog-quota-user=projects/smartappstwitter
+[debug] [2023-03-08T08:25:58.750Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/smartappstwitter/services/firebasedatabase.googleapis.com 200
+[debug] [2023-03-08T08:25:58.751Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/smartappstwitter/services/firebasedatabase.googleapis.com [omitted]
+[info] +  database: required API firebasedatabase.googleapis.com is enabled 
+[info] 
+[debug] [2023-03-08T08:25:58.757Z] >>> [apiv2][query] GET https://firebasedatabase.googleapis.com/v1beta/projects/smartappstwitter/locations/-/instances/smartappstwitter-default-rtdb [none]
+[debug] [2023-03-08T08:25:59.329Z] <<< [apiv2][status] GET https://firebasedatabase.googleapis.com/v1beta/projects/smartappstwitter/locations/-/instances/smartappstwitter-default-rtdb 200
+[debug] [2023-03-08T08:25:59.330Z] <<< [apiv2][body] GET https://firebasedatabase.googleapis.com/v1beta/projects/smartappstwitter/locations/-/instances/smartappstwitter-default-rtdb {"name":"projects/986039031077/locations/us-central1/instances/smartappstwitter-default-rtdb","project":"projects/986039031077","databaseUrl":"https://smartappstwitter-default-rtdb.firebaseio.com","type":"DEFAULT_DATABASE","state":"ACTIVE"}
+[info] 
+[info] Firebase Realtime Database Security Rules allow you to define how your data should be
+[info] structured and when your data can be read from and written to.
+[info] 
+[debug] [2023-03-08T08:26:09.982Z] >>> [apiv2][query] GET https://smartappstwitter-default-rtdb.firebaseio.com/.settings/rules.json [none]
+[debug] [2023-03-08T08:26:10.584Z] <<< [apiv2][status] GET https://smartappstwitter-default-rtdb.firebaseio.com/.settings/rules.json 200
+[debug] [2023-03-08T08:26:10.585Z] <<< [apiv2][body] GET https://smartappstwitter-default-rtdb.firebaseio.com/.settings/rules.json [stream]
+[info] +  Database Rules for smartappstwitter-default-rtdb have been written to database.rules.json. 
+[info] Future modifications to database.rules.json will update Realtime Database Security Rules when you run
+[info] firebase deploy.
+[info] 
+=== Firestore Setup
+[debug] [2023-03-08T08:26:10.607Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/smartappstwitter/services/firestore.googleapis.com [none]
+[debug] [2023-03-08T08:26:10.608Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/smartappstwitter/services/firestore.googleapis.com x-goog-quota-user=projects/smartappstwitter
+[debug] [2023-03-08T08:26:12.437Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/smartappstwitter/services/firestore.googleapis.com 200
+[debug] [2023-03-08T08:26:12.440Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/smartappstwitter/services/firestore.googleapis.com [omitted]
+[debug] [2023-03-08T08:26:12.441Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/smartappstwitter/databases/(default) [none]
+[debug] [2023-03-08T08:26:14.486Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/smartappstwitter/databases/(default) 200
+[debug] [2023-03-08T08:26:14.487Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/smartappstwitter/databases/(default) {"name":"projects/smartappstwitter/databases/(default)","uid":"ea55e461-5711-40fa-8ad1-28d2e903daee","createTime":"2023-03-08T08:23:18.866972Z","updateTime":"2023-03-08T08:23:18.866972Z","locationId":"nam5","type":"FIRESTORE_NATIVE","concurrencyMode":"PESSIMISTIC","appEngineIntegrationMode":"DISABLED","keyPrefix":"s","etag":"IPD29MD0y/0CMJzIyOzzy/0C"}
+[debug] [2023-03-08T08:26:14.487Z] database_type: FIRESTORE_NATIVE
+[debug] [2023-03-08T08:26:14.489Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-03-08T08:26:14.490Z] > authorizing via signed-in user (smarta99sdevelopers@gmail.com)
+[debug] [2023-03-08T08:26:14.490Z] [iam] checking project smartappstwitter for permissions ["firebase.projects.get"]
+[debug] [2023-03-08T08:26:14.493Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/smartappstwitter:testIamPermissions [none]
+[debug] [2023-03-08T08:26:14.493Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/smartappstwitter:testIamPermissions x-goog-quota-user=projects/smartappstwitter
+[debug] [2023-03-08T08:26:14.493Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/smartappstwitter:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-03-08T08:26:16.420Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/smartappstwitter:testIamPermissions 200
+[debug] [2023-03-08T08:26:16.421Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/smartappstwitter:testIamPermissions {"permissions":["firebase.projects.get"]}
+[info] 
+[info] Firestore Security Rules allow you to define how and when to allow
+[info] requests. You can keep these rules in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[debug] [2023-03-08T08:26:20.150Z] >>> [apiv2][query] GET https://firebaserules.googleapis.com/v1/projects/smartappstwitter/releases pageSize=10&pageToken=
+[debug] [2023-03-08T08:26:22.050Z] <<< [apiv2][status] GET https://firebaserules.googleapis.com/v1/projects/smartappstwitter/releases 200
+[debug] [2023-03-08T08:26:22.051Z] <<< [apiv2][body] GET https://firebaserules.googleapis.com/v1/projects/smartappstwitter/releases {"releases":[{"name":"projects/smartappstwitter/releases/cloud.firestore","rulesetName":"projects/smartappstwitter/rulesets/0b70984a-5979-4499-9bd4-a9c220700c46","createTime":"2023-03-08T08:23:27.441188Z","updateTime":"2023-03-08T08:23:27.441188Z"}]}
+[debug] [2023-03-08T08:26:22.052Z] Found ruleset: projects/smartappstwitter/rulesets/0b70984a-5979-4499-9bd4-a9c220700c46
+[debug] [2023-03-08T08:26:22.058Z] >>> [apiv2][query] GET https://firebaserules.googleapis.com/v1/projects/smartappstwitter/rulesets/0b70984a-5979-4499-9bd4-a9c220700c46 [none]
+[debug] [2023-03-08T08:26:22.534Z] <<< [apiv2][status] GET https://firebaserules.googleapis.com/v1/projects/smartappstwitter/rulesets/0b70984a-5979-4499-9bd4-a9c220700c46 200
+[debug] [2023-03-08T08:26:22.534Z] <<< [apiv2][body] GET https://firebaserules.googleapis.com/v1/projects/smartappstwitter/rulesets/0b70984a-5979-4499-9bd4-a9c220700c46 [omitted]
+[info] 
+[info] Firestore indexes allow you to perform complex queries while
+[info] maintaining performance that scales with the size of the result
+[info] set. You can keep index definitions in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[debug] [2023-03-08T08:26:26.877Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/smartappstwitter/databases/(default)/collectionGroups/-/indexes [none]
+[debug] [2023-03-08T08:26:26.880Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/smartappstwitter/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* [none]
+[debug] [2023-03-08T08:26:28.818Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/smartappstwitter/databases/(default)/collectionGroups/-/indexes 200
+[debug] [2023-03-08T08:26:28.819Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/smartappstwitter/databases/(default)/collectionGroups/-/indexes {}
+[debug] [2023-03-08T08:26:29.023Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/smartappstwitter/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* 200
+[debug] [2023-03-08T08:26:29.024Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/smartappstwitter/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* {"fields":[{"name":"projects/smartappstwitter/databases/(default)/collectionGroups/__default__/fields/*","indexConfig":{"indexes":[{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","order":"ASCENDING"}],"state":"READY"},{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","order":"DESCENDING"}],"state":"READY"},{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","arrayConfig":"CONTAINS"}],"state":"READY"}]}}]}
+[info] 
+=== Functions Setup
+[debug] [2023-03-08T08:26:29.032Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-03-08T08:26:29.033Z] > authorizing via signed-in user (smarta99sdevelopers@gmail.com)
+[debug] [2023-03-08T08:26:29.034Z] [iam] checking project smartappstwitter for permissions ["firebase.projects.get"]
+[debug] [2023-03-08T08:26:29.036Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/smartappstwitter:testIamPermissions [none]
+[debug] [2023-03-08T08:26:29.037Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/smartappstwitter:testIamPermissions x-goog-quota-user=projects/smartappstwitter
+[debug] [2023-03-08T08:26:29.038Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/smartappstwitter:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-03-08T08:26:30.630Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/smartappstwitter:testIamPermissions 200
+[debug] [2023-03-08T08:26:30.631Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/smartappstwitter:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-03-08T08:26:30.633Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/smartappstwitter/services/cloudfunctions.googleapis.com [none]
+[debug] [2023-03-08T08:26:30.633Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/smartappstwitter/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/smartappstwitter
+[debug] [2023-03-08T08:26:30.638Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/smartappstwitter/services/runtimeconfig.googleapis.com [none]
+[debug] [2023-03-08T08:26:30.638Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/smartappstwitter/services/runtimeconfig.googleapis.com x-goog-quota-user=projects/smartappstwitter
+[debug] [2023-03-08T08:26:32.378Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/smartappstwitter/services/runtimeconfig.googleapis.com 200
+[debug] [2023-03-08T08:26:32.378Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/smartappstwitter/services/runtimeconfig.googleapis.com [omitted]
+[debug] [2023-03-08T08:26:32.384Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/smartappstwitter/services/cloudfunctions.googleapis.com 200
+[debug] [2023-03-08T08:26:32.384Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/smartappstwitter/services/cloudfunctions.googleapis.com [omitted]
+[debug] [2023-03-08T08:26:32.385Z] >>> [apiv2][query] POST https://serviceusage.googleapis.com/v1/projects/smartappstwitter/services/cloudfunctions.googleapis.com:enable [none]
+[debug] [2023-03-08T08:26:32.385Z] >>> [apiv2][(partial)header] POST https://serviceusage.googleapis.com/v1/projects/smartappstwitter/services/cloudfunctions.googleapis.com:enable x-goog-quota-user=projects/smartappstwitter
+[debug] [2023-03-08T08:26:34.855Z] <<< [apiv2][status] POST https://serviceusage.googleapis.com/v1/projects/smartappstwitter/services/cloudfunctions.googleapis.com:enable 200
+[debug] [2023-03-08T08:26:34.855Z] <<< [apiv2][body] POST https://serviceusage.googleapis.com/v1/projects/smartappstwitter/services/cloudfunctions.googleapis.com:enable [omitted]
+[debug] [2023-03-08T08:26:44.860Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/smartappstwitter/services/cloudfunctions.googleapis.com [none]
+[debug] [2023-03-08T08:26:44.861Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/smartappstwitter/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/smartappstwitter
+[debug] [2023-03-08T08:26:46.594Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/smartappstwitter/services/cloudfunctions.googleapis.com 200
+[debug] [2023-03-08T08:26:46.595Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/smartappstwitter/services/cloudfunctions.googleapis.com [omitted]
+[info] Let's create a new codebase for your functions.
+[info] A directory corresponding to the codebase will be created in your project
+[info] with sample code pre-configured.
+
+[info] See https://firebase.google.com/docs/functions/organize-functions for
+[info] more information on organizing your functions using codebases.
+
+[info] Functions can be deployed with firebase deploy.
+
+[info] +  Wrote functions/package.json 
+[info] +  Wrote functions/index.js 
+[info] +  Wrote functions/.gitignore 
+[info] 
+=== Hosting Setup
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
