@@ -1,4 +1,4 @@
-export default function SidebarMenuItems({ title, Icon,iconHeight ,active}) {
+export default function SidebarMenuItems({ title, Icon, iconHeight, active }) {
   return (
     <div
       className="flex items-center
@@ -6,7 +6,9 @@ export default function SidebarMenuItems({ title, Icon,iconHeight ,active}) {
      HoverEffect lg:justify-start text-lg sm:p-3 space-x-3"
     >
       <Icon className="h-7" size={25} />
-      <span className={`${active && "font-bold"} hidden lg:inline`}>{title}</span>
+      <span className={`${active && "font-bold"} hidden lg:inline`}>
+        {title}
+      </span>
     </div>
   );
 }

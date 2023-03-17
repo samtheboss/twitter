@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import Sidebar from "@/Components/Sidebar";
 import Feed from "@/Components/Feed";
 import Widgets from "@/Components/Widgets";
+import CommentModal from "@/Components/CommentModal";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -22,6 +23,7 @@ export default function Home({ newResults, whotofollow }) {
           newResults={newResults.articles}
           whotofollow={whotofollow.results}
         />
+        <CommentModal />
       </main>
     </div>
   );

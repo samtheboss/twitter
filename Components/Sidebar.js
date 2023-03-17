@@ -9,7 +9,6 @@ import { InboxIcon } from "@heroicons/react/24/outline";
 import { BookmarkIcon } from "@heroicons/react/24/outline";
 import { ClipboardIcon } from "@heroicons/react/24/outline";
 import { UserIcon } from "@heroicons/react/24/outline";
-import PersonImage from "../assests/icon.png";
 
 import { CgMoreO } from "react-icons/cg";
 import { TfiMoreAlt } from "react-icons/tfi";
@@ -19,7 +18,7 @@ export default function Sidebar() {
   const { data: session } = useSession();
 
   return (
-    <div className="hidden sm:flex flex-col p-2  fixed h-full lg:ml-10">
+    <div className="hidden sm:flex flex-col p-2 dark:bg-slate-800  fixed h-full lg:ml-10">
       {/*logo div*/}
       <div className="HoverEffect p-1 hover:bg-blue-100">
         <img
@@ -38,7 +37,7 @@ export default function Sidebar() {
             <SidebarMenuItems title="Bookmarks" Icon={BookmarkIcon} />
             <SidebarMenuItems title="Lists" Icon={ClipboardIcon} />
             <SidebarMenuItems title="Profile" Icon={UserIcon} />
-            <SidebarMenuItems title="More" Icon={CgMoreO} iconHeight={70} />
+            <SidebarMenuItems title="More" Icon={CgMoreO} iconHeight={1} />
           </>
         )}
       </div>
